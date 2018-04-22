@@ -1,0 +1,42 @@
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.imageadjust {
+    max-width: 92px;
+    float: left;
+    padding: 10px;
+}
+.menu {
+    text-decoration: none;
+    color: #f2f2f2;
+    text-align: center;
+}
+
+.button{
+    padding: 17px;
+    margin: 11px;
+}
+
+/* Style the topnav links */
+.right {
+    float: right;  
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Style the topnav links */
+.left {
+    float: left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}

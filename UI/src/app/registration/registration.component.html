@@ -1,0 +1,33 @@
+<div>
+
+    <h1>{{ completeMessage }}</h1>
+    <form [formGroup]="rForm" (ngSubmit)="addPost(rForm.value)">
+        <div class="form-container">
+            <div class="row columns">
+
+                <h1>Please provide the details</h1>
+
+                <label>Name
+                    <input type="text" formControlName="fullname">
+                </label>
+                <div class="alert" *ngIf="!rForm.controls['fullname'].valid && rForm.controls['fullname'].touched">{{ titleAlert }}</div>
+
+                <label>Username
+                    <input type="text" formControlName="username">
+                </label>
+                <div class="alert" *ngIf="!rForm.controls['username'].valid && rForm.controls['username'].touched">{{ titleAlert }}</div>
+
+                <label>Password
+                    <input type="password" formControlName="password">
+                </label>
+                <div class="alert" *ngIf="!rForm.controls['password'].valid && rForm.controls['password'].touched">You must give a password that's between 6 and 20 in length!.</div>
+
+                <input type="submit" class="button expanded" value="REGISTER!" [disabled]="!rForm.valid">
+            </div>
+        </div>
+    </form>
+</div>
+
+<ng-template #userpage>
+    <app-user></app-user>
+</ng-template>

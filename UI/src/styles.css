@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Muli:400,700');
+
+body {
+    background:#2505961c;
+    font-family: 'Muli';
+    overflow: auto;
+    position: relative;
+    padding: 0px 0 42px 0;
+}
